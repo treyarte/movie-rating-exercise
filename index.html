@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Part Two - Movies App!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="center-align">Movie Rating App</h1>
+      <form>
+        <div class="row center-align ">
+          <div class="input-field col s6 offset-s2">
+            <label for="movie-title">Movie Title</label>
+            <input id="movie-title" type="text" data-length="10" required />
+          </div>
+          <div class="row">
+            <div class="input-field col s1">
+              <label for="rating">Rating</label>
+              <input
+                id="rating"
+                type="number"
+                min="0"
+                max="10"
+                class="validate"
+                required
+              />
+            </div>
+            <div class="input-field col s2">
+              <button class="waves-effect waves-light btn-large">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <table id="movie-table" class="highlight striped">
+        <tr>
+          <th>Title</th>
+          <th>Rating</th>
+          <th>Delete</th>
+        </tr>
+      </table>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
